@@ -1,0 +1,46 @@
+@import (once) '../../resources/variable.less';
+
+.editor {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  cursor: text;
+  border-radius: 2px;
+  margin-bottom: 2em;
+  box-shadow: inset 0px 1px 8px -3px #ababab;
+  background: #fefefe;
+  min-height: 43px;
+  font-size: 16px;
+}
+
+.editor :global(.public-DraftEditor-content) {
+  /*min-height: 140px;*/
+  /*min-height: 34px;*/
+}
+
+.btn-search {
+  min-height: 43px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.user-mention-component {
+  background-color: #999;
+  border-radius: 4px;
+  color: white;
+  padding: 4px;
+
+  .content {
+    margin: 0 @base-vertical;
+  }
+}
+
+.search-box-input {
+  display: block;
+  width: 100%;
+  min-height: 43px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  margin-bottom: 0;
+}

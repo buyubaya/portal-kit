@@ -1,0 +1,8 @@
+.ql-toolbar {
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+}
+.ql-container {
+    border: none !important;
+    height: 80%;
+}

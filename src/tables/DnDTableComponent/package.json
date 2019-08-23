@@ -1,0 +1,7 @@
+{
+  "name": "Drag and Drop Table Component",
+  "version": "0.0.0",
+  "private": true,
+  "using": true,
+  "main": "./index.js"
+}

@@ -1,0 +1,84 @@
+@import "./default_values.less";
+@import "./style.less";
+
+
+.payment-status{
+  font-size: 14px;
+  &.pending{
+    color: #3e8acc;
+  }
+  &.processed{
+    color: #58b957;
+  }
+  &.archived{
+    color: #f2ae43;
+  }
+}
+
+.invoice-page{
+  max-width: 940px;
+  margin: 0px auto;
+}
+
+.create-invoice-form{
+  margin: 0px auto;
+
+  // .Select-control{
+  //   height: 52px;
+  //   .Select-placeholder{
+  //     display: flex;
+  //     align-items: center;
+  //   }
+  // }
+  .job-selected{
+    margin-top: @base-vertical;
+    margin-bottom: @base-vertical;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  }
+}
+
+.user-stick-select{
+  &.selected{
+    margin-top: -2px;
+  }
+  .user-name-select{
+    padding-left: 10px;
+  }
+  .img-small-select{
+    width: 17pt;
+    height: 17pt;
+  }
+}
+
+.invoice-detail-item{
+  margin: 10px 0px;
+}
+
+.invoice-table{
+  .invoice-table-head{
+    background-color: #eee;
+  }
+  thead{
+    background-color: #eee;
+    > th{
+      border: 0px;
+    }
+  }
+}
+.create-invoice-add-job{
+  margin-top: @base-vertical;
+  margin-bottom: @base-vertical;
+}

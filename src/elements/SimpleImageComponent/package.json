@@ -1,0 +1,7 @@
+{
+  "name": "Simple Image Component",
+  "version": "0.0.0",
+  "private": true,
+  "using": true,
+  "main": "./index.js"
+}

@@ -1,0 +1,71 @@
+@import '../../resources/variable.less';
+
+.asset-item {
+    width: 200px;
+    min-height: 233px;
+    background-color: @color-mercury;
+    border: 1px solid @color-silver;
+    border-radius: @border-radius-base;
+    position: relative;
+    /*padding: 4px; */
+}
+
+.image-view-cover{
+    // display: table-cell;
+    vertical-align: middle;
+    // min-width: 180px;
+    height: 180px;
+    width: 100%;
+}
+.body {
+    padding: 4px;
+}
+
+.title{
+    padding: 6px;
+    /*display: block;*/
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    /*overflow: hidden;*/
+    // max-height: 2.4em;
+    // line-height: 1em;
+    // min-height: 2.4em;
+}
+
+.footer {
+    border-top: 1px solid #ccc;
+    padding: 6px;
+    /*min-height: 39px;*/
+}
+
+.asset-selected{
+    background-color: #DFF0D7;
+    border: 1px solid #D6EAC5;
+}
+
+.add-asset-status{
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    .asset-select-icon
+    {
+      width: 35px;
+      height: 35px;
+      background-color: #fff;
+      border-radius: 30px;
+      display: block;
+    }
+    .asset-checked-icon
+    {
+      font-size: 23px;
+      padding: 5px;
+      color: #58B957;
+      background-color: #fff;
+      border-radius: 30px;
+    }
+    .asset-disabled-icon{
+      font-size: 30px;
+      color: #F2AE43;
+    }
+  }

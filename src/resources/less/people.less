@@ -1,0 +1,110 @@
+@import "./default_values.less";
+@import "./style.less";
+
+
+.people_sidebar{
+  max-width: 280px;
+  margin: 0px auto;
+
+  .search_box{
+    margin-bottom: 20px;
+  }
+
+  ul{
+    li{
+      &.active{
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.people-info{
+  max-width: 550pt;
+  margin: 0px auto;
+  button{
+    &.header-edit{
+      padding: 0px;
+    }
+  }
+  .info-row{
+    margin: 10px 0px;
+
+  }
+  .info-content{
+    word-break: break-word;
+  }
+}
+
+button{
+  &.info-action-button{
+    margin: 5px;
+    min-width: 60px;
+  }
+}
+
+.no-margin-top{
+  margin-top: 0px;
+}
+
+.profile-header{
+  // background-color: rgba(62, 138, 204,0.8);
+  background-color: #3E8ACC;
+  color: white;
+  padding-top: 80pt;
+  padding-bottom: 20pt;
+  .content{
+    max-width: 550pt;
+    margin: 0px auto;
+  }
+  .subscribe-notification{
+    margin-left: 20px;
+  }
+  .edit-mode{
+
+  }
+
+  .view-mode{
+
+  }
+}
+
+.assign-role{
+  color: black;
+  >ul{
+    &.dropdown-menu{
+      min-width: 250px;
+      top: 150%;
+    }
+    >li{
+
+    }
+  }
+}
+
+.people-info-avatar{
+  position: relative;
+  &:hover{
+    .change-avatar-image{
+      // display: block;
+    display: flex;
+    align-items: center;
+    }
+  }
+  .change-avatar-image{
+    display: none;
+    position: absolute;
+    width: 70pt;
+    height: 70pt;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 15px;
+    color: #fff;
+  }
+}
+.people-list-item{
+  padding: @large-vertical 0px;
+  border-bottom: 1px solid #DDDDDD;
+}

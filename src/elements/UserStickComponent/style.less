@@ -1,0 +1,30 @@
+@import '../../resources/variable.less';
+
+.user-stick {
+  // border-radius: 5px;
+  // width: 167pt;
+  // height: 46pt;
+  display: inline-flex;
+
+  p {
+    // padding-left: 5pt;
+    padding-left: 8px;
+    margin: 0;
+  }
+
+  &.filled {
+    // background-color: rgba(29, 29, 27, 0.1); //#1D1D1B
+    text-decoration: underline;
+  }
+}
+
+.user-text {
+  display: flex;
+  align-items: center;
+  // align-content: center;
+  // height: 40pt;
+  &.with_subtext {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

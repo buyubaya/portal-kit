@@ -1,0 +1,161 @@
+@base-vertical: 6px;
+
+@base-horizontal: 12px;
+
+@large-vertical: 10px;
+
+@large-horizontal: 16px;
+
+@small-vertical: 5px;
+
+@small-horizontal: 10px;
+
+@xs-vertical: 1px;
+
+@xs-horizontal: 5px;
+
+@line-height-large: 1.33;
+
+@line-height-small: 1.5;
+
+@border-radius-base: 4px;
+
+@border-radius-large: 6px;
+
+@border-radius-small: 3px;
+
+@component-active-color: #fff;
+
+@component-active-bg: #fff;
+
+@caret-width-base: 4px;
+
+@caret-width-large: 5px;
+
+@desktop: ~'only screen and (min-width: 960px) and (max-width: 1199px)';
+
+@tablet: ~'only screen and (min-width: 720px) and (max-width: 959px)';
+
+@color-white : #ffffff;
+
+@color-silver : #C6C6C6;
+
+@color-fern : #58B957;
+
+@color-casablanca : #F2AE43;
+
+@color-valencia : #DB524B;
+
+@color-danube : #3E8ACC;
+
+@color-mercury : #E6E6E6;
+
+@color-alabaster : #F8F8F8;
+
+@color-default :#fff;
+
+@color-primary :#337ab7;
+
+@color-success :#5cb85c;
+
+@color-info :#5bc0de;
+
+@color-warning :#f0ad4e;
+
+@color-danger :#d9534f;
+
+@color-link :#337ab7;
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.abs-middle-vertical-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  // height: 30%;
+  height: 45%;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.free-bootstrap-column {
+  width: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.vertical-middle {
+  vertical-align: middle !important;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.simple-button-group {
+  padding-top: @large-vertical;
+  padding-bottom: @large-vertical;
+
+  button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.form-input-inline-view-mode {
+  padding: @base-vertical;
+  border-radius: @border-radius-base;
+
+  &:hover {
+    background-color: #e6e6e6;
+  }
+}
+
+.btn-pill {
+  border-radius: 23px;
+  // color: #3E8ACC;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.margin-auto-left {
+  margin-left: auto;
+}
+
+.margin-auto-right {
+  margin-right: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}

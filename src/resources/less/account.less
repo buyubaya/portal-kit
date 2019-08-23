@@ -1,0 +1,65 @@
+@import "./default_values.less";
+@import "./style.less";
+
+
+.account-form{
+  // margin: 0px auto;
+  // max-width: 300pt;
+  margin: auto;
+  max-width: 300px;
+  // height: 295pt;
+  h4{
+    margin-bottom: 20px;
+  }
+  form{
+    // display: inline-block;
+  }
+
+  button{
+    &.btn-lg{
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+
+  .login-message{
+    text-align: left;
+  }
+}
+
+.forgot-password-form{
+  min-width: 450px;
+  padding: 50px 0px;
+}
+
+.account-popover{
+  // display: inline-block;r
+
+  ul{
+    li{
+      width: 100%;
+      &.account_info{
+        min-width: 350px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        h4{
+          margin-top: 0px;
+          margin-bottom: 5px;
+        }
+        .user_role{
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.change-password-form{
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  margin: 0px auto;
+}

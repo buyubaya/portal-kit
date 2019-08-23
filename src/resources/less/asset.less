@@ -1,0 +1,342 @@
+@import "./default_values.less";
+.asset-item{
+  background-color: #F8F8F8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  &.detail{
+    width: 200px;
+    height: 375px;
+    margin: @large-horizontal;
+    // padding: @base-vertical @base-horizontal;
+  }
+  &.asset_thumbnail{
+    width: 160px;
+    // height: 188px;
+    margin: @base-vertical @base-horizontal;
+    // padding: @base-vertical @base-horizontal;
+    .asset-info{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .asset-info{
+    padding: 0px 9px;
+    // border-bottom: 1px solid #ccc;
+    // .col-md-12{
+    //   padding: 0px;
+    // }
+  }
+  .asset-user{
+    padding: 6px 9px;
+    margin-top: 6px;
+    border-top: 1px solid #ccc;
+  }
+
+  .asset-image-view-cover{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .asset-image-view{
+    // width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 4pt;
+    cursor: pointer;
+  }
+  .asset-status{
+    i{
+      margin-right: 4px;
+    }
+  }
+  .asset-job-link{
+    i{
+      margin-right: 4px;
+    }
+  }
+
+  .asset-label{
+    margin-right: 5px;
+  }
+  .asset-avatar{
+    margin-right: 8px;
+  }
+}
+
+.add-asset-item{
+  width: 200px;
+  position: relative;
+  display: inline-block;
+  margin: 15px 15px ;
+  .asset-view{
+    width: 100%;
+    padding: 4px;
+    max-height: 220px;
+    // min-width: 200px;
+    // min-height: 200px;
+    // max-width: 100%;
+    // max-height: 100%;
+  }
+  .add-asset-info{
+    padding: 9px;
+  }
+  .add-asset-status{
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    .asset-select-icon
+    {
+      width: 35px;
+      height: 35px;
+      background-color: #fff;
+      border-radius: 30px;
+    }
+    .asset-checked-icon
+    {
+      font-size: 25px;
+      padding: 5px;
+      color: #58B957;
+      background-color: #fff;
+      border-radius: 30px;
+    }
+    .asset-disabled-icon{
+      font-size: 30px;
+      color: #F2AE43;
+    }
+  }
+  &.asset-selected{
+    background-color: #DFF0D7;
+    border: 1px solid #D6EAC5;
+  }
+  &.asset-disabled{
+    background-color: #FFF;
+    border: 1px solid #EAEAEA;
+  }
+
+
+}
+
+.add-asset-modal-content{
+  width: 750px;
+}
+
+.asset-filter-searchbox{
+  margin: 45px 0px 20px 0px;
+  .asset-filter-searchbox-input{
+
+    .Select-control{
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+  }
+  .asset-filter-searchbox-button{
+    line-height: 1.9;
+  }
+}
+.asset-filter{
+  .col-md-6{
+    padding-left: 0px;
+
+  }
+}
+
+.asset-list-view-control{
+  height: 48px;
+  background-color: #f8f8f8;
+  padding: 0px 5px;
+  border-bottom: 1px solid #ccc;
+  .right-align-item{
+    margin-left: auto;
+  }
+  .asset-count,.asset-viewmode,.asset-sort-by{
+    margin: 10px;
+  }
+  .asset-options-sort{
+    min-width: 120px;
+  }
+}
+.asset-list{
+  .asset-list-container{
+    padding-top: @base-vertical;
+  }
+}
+
+.asset-detail{
+  // width: 600px;
+  hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-top: 1px solid #e6e6e6;
+  }
+}
+.asset-detail-header{
+  .header-title{
+    // margin-bottom: 10px;
+    .asset-name-input{
+      height: 34px;
+    }
+  }
+  .header-label{
+    margin-bottom: 20px;
+  }
+  .show-link-info{
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .asset-detail-label{
+    margin-right: 10px;
+  }
+  .export{
+    margin: 0px 5px;
+  }
+
+  .btn-action-header-dropdown{
+    display: inline-block;
+    float: right;
+    ul.dropdown-menu{
+      left: auto;
+    }
+  }
+}
+.asset-image{
+  width: 100%;
+  max-width: 600px;
+}
+.asset-detail-status{
+  padding: @base-vertical 0px;
+}
+
+.asset-detail-job{
+  padding: @base-vertical @base-horizontal;
+}
+.asset-detail-people{
+  padding: @base-vertical @base-horizontal;
+  display: inline-block;
+  .user-item{
+    margin-right: 10px;
+    padding: 6px;
+  }
+}
+.asset-detail-activity{
+  padding: @base-vertical @base-horizontal;
+}
+.asset-detail-testing{
+  padding: @base-vertical @base-horizontal;
+  display: inline-block;
+  width: 100%;
+  clear: both;
+  .test-item-btn-group{
+    button{
+      // margin-top: 10px;
+      margin-right: 10px;
+      // float: right;
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  }
+  .testing-item{
+    width: 100%;
+    display: inline-block;
+    padding-top: @base-vertical;
+    padding-bottom: @base-vertical;
+
+    &.flex-center{
+      display: inline-flex;
+    }
+  }
+}
+.checklist{
+  margin: 10px 0px;
+}
+
+
+.asset-attach-panel{
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  align-items: inherit;
+  .job-list-panel{
+    width: 50%;
+    // display: inline-table;
+    border-right: 1px solid #e6e6e6;
+    .list-group-item{
+      border: 0px;
+      border-radius: 0px;
+      &.active{
+        background-color: #3E8ACC;
+        color: white;
+      }
+    }
+  }
+  .job-deliverable-panel{
+    h3{
+      margin-top: 0px;
+    }
+    // border-left: 1px solid #e6e6e6;
+    width: 50%;
+    // display: inline-table;
+    padding: @base-vertical @base-horizontal;
+  }
+}
+
+.upload-asset-header-btn{
+  margin-left: auto;
+  button{
+    margin-right: 10px;
+  }
+}
+.asset-upload-item{
+  padding: 12px 0px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.asset-upload-image{
+  width: 180px;
+  height: 180px;
+}
+.asset-upload-info-block{
+  padding-top: 6px;
+}
+.upload-status{
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  text-align: center;
+  .upload-status-icon{
+    font-size: 35px;
+  }
+}
+
+
+.asset-search-area{
+  // &.col-md-4{
+    background-color: #f8f8f8;
+    border-right: 1px solid #ccc;
+  // }
+}
+.asset-list-area{
+  // &.col-md-8{
+    padding-left: 0px;
+    padding-right: 0px;
+  // }
+}
+.asset-thumbnail-image-size-limit{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.asset-thumbnail-cover{
+  width: 160px;
+  height: 188px;
+}
+.asset-detail-image-container{
+  width: 100%;
+  text-align: center;
+}
+.asset-attach-job-group{
+  max-height: 200px;
+  overflow-y: auto
+}

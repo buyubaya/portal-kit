@@ -1,0 +1,74 @@
+@import "./default_values.less";
+@import "./style.less";
+
+
+.task-status{
+  font-size: 14px;
+  &.new{
+    color: #FF9900;
+  }
+  &.claimed{
+    color: #FF6633;
+  }
+  &.completed{
+    color: #3399CC;
+  }
+  &.paid{
+    color: #006633;
+  }
+  &.failed{
+    color: #3399CC;
+  }
+}
+
+.task-page{
+  max-width: 940px;
+  margin: 0px auto;
+}
+
+
+
+.task-table{
+  .task-table-head{
+    background-color: #eee;
+  }
+  thead{
+    background-color: #eee;
+    > th{
+      border: 0px;
+    }
+  }
+}
+
+.task-content-header{
+  .Title{
+    width: auto;
+    margin: 0 10px;
+  }
+}
+
+.task-detail-container{
+  padding: 15px 0px;
+}
+
+.task-detail-item{
+  margin-bottom: 30px;
+}
+
+.task-item-nofify-label{
+  width: 100%;
+  background-color: #CCCCCC;
+  padding: @base-vertical @base-horizontal;
+  border-radius: .25em;
+}
+.attachment-item{
+  img{
+    width: 80px;
+    height: 80px;
+    margin: 0px 15px 15px 0px;
+  }
+}
+.task-fail-reason-input-block{
+  border-left: 3px solid red;
+  margin: @large-vertical 0px;
+}

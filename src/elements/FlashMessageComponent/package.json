@@ -1,0 +1,7 @@
+{
+  "name": "Flash Message Component",
+  "version": "0.0.0",
+  "private": true,
+  "using": true,
+  "main": "./index.js"
+}

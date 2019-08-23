@@ -1,0 +1,49 @@
+/* @import '../../../3rd_modules/react-select/less/default.less'; */
+// @import url('react-select/dist/react-select.css');
+@import url('bootstrap-daterangepicker/daterangepicker.css');
+
+
+.value-label-style-renderer{
+    .Select-value{
+        color: #fff;
+        background-color: #777;
+        border-radius: .25em;
+    }
+
+    .Select-value-icon{
+        background-color: #777;
+        float: right;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+
+        border-bottom-right-radius: .25em;
+        border-top-right-radius: .25em;
+        padding: .2em .6em .3em;
+        border-color: #777;
+
+        &:hover{
+            background-color: #777;
+            color: #fff
+        }
+    }
+    .Select-value-label{
+        background-color: #777;
+        color: #fff;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+
+        padding: .2em .6em .3em;
+        border-bottom-left-radius: .25em;
+        border-top-left-radius: .25em;
+        border-color: #777;
+    }
+}
+
+.select-control-full-height{
+    .Select-control{
+        height: 100%;
+    }
+}

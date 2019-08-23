@@ -1,0 +1,7 @@
+{
+  "name": "Alert Component",
+  "version": "0.0.0",
+  "private": true,
+  "using": true,
+  "main": "./index.js"
+}
